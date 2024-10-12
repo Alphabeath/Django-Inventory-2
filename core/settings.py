@@ -25,8 +25,9 @@ SECRET_KEY = 'qyu(9l9v%^+r(vt#ecf+36#lis516#3bo5@bo-rd*d%a=!%8#!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['django-inventory-2-production.up.railway.app']
 
+CSRF_TRUSTED_ORIGINS = ['https://django-inventory-2-production.up.railway.app']
 
 # Application definition
 
@@ -61,6 +62,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'core.urls'
+
 
 TEMPLATES = [
     {
